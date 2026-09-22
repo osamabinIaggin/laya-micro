@@ -1,0 +1,4 @@
+# What a Raspberry Pi actually needs to run a quantized graph — no torch, no transformers.
+onnxruntime>=1.20
+numpy>=2.0
+tokenizers>=0.20

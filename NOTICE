@@ -1,0 +1,119 @@
+laya-micro
+Copyright 2026 Gideon Glago
+
+This project builds on, and produces derivative works of, the Laya decision
+model developed by Convai Innovations.
+
+================================================================================
+1. Laya - model weights, tokenizer and reference implementation
+================================================================================
+
+Laya is developed and released by Convai Innovations under the Apache License,
+Version 2.0.
+
+    Code:    https://github.com/NandhaKishorM/laya
+    Weights: https://huggingface.co/convaiinnovations/laya
+             The checkpoints ship as subfolders of that repository:
+             laya (ModernBERT-large, 421M), laya-multilingual (mmBERT-base,
+             322M), laya-typed-decisions (421M).
+    License: Apache License, Version 2.0
+             http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed
+under the Apache License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES
+OR CONDITIONS OF ANY KIND, either express or implied.
+
+================================================================================
+2. Statement of modifications (Apache License 2.0, section 4(b))
+================================================================================
+
+The scripts in this repository modify Laya checkpoints. Any checkpoint they
+produce is a modified derivative of the Apache-2.0 licensed Laya weights, and
+carries this statement of what was changed.
+
+2.1 Vocabulary pruning (prune_vocab.py)
+    Applied to the laya-multilingual checkpoint (mmBERT-base backbone).
+    - The token embedding matrix is sliced from 256,000 rows to the subset of
+      tokens a supplied corpus uses, closed over the BPE merge rules so that
+      every retained token can still be reassembled from retained parents. The
+      reference build for the Zeus robot command set retains 15,188 rows
+      (5.9% of the original vocabulary).
+    - The tokenizer vocabulary and merge list are rewritten to that subset and
+      token ids are remapped accordingly.
+    - Transformer encoder and decision head weights are NOT changed. They are
+      copied bit for bit from the upstream checkpoint.
+    - Consequence: a pruned checkpoint is exact only over the token set it was
+      built for. Text outside that set tokenizes differently than it would
+      upstream and can therefore decide differently.
+
+2.2 ONNX export (export_onnx.py)
+    - The PyTorch module is exported to an ONNX graph with torch.onnx.export
+      using the dynamo exporter at opset 18, with dynamic batch and sequence
+      dimensions, or with fully static shapes when --pad-to is given.
+    - model.encoder.config.reference_compile is set to False before export.
+    - The resulting graph is a re-expression of the upstream computation, not a
+      retraining or a change of learned parameters.
+
+2.3 Block-wise int8 quantization (quantize_onnx.py)
+    - Stale value_info entries are removed from the exported graph, and
+      MatMul weights are quantized with MatMulNBitsQuantizer at block_size 64,
+      symmetric, 8 bits. Embeddings and the decision head are kept at higher
+      precision.
+    - Weight values are changed. Decisions produced by a quantized artifact are
+      not guaranteed to match the upstream fp32 model.
+
+2.4 What is NOT modified
+    - No training, fine-tuning or distillation is performed.
+    - The model architecture, the three decision primitives (choice, score,
+      noul) and the calibration behaviour are Convai Innovations' work.
+
+================================================================================
+3. Scope of this NOTICE
+================================================================================
+
+This repository distributes no model weights. The scripts download checkpoints
+from Convai Innovations onto the user's own machine and build derivative
+artifacts locally.
+
+If you redistribute an artifact produced by these scripts, Apache License 2.0
+section 4 applies to it: ship a copy of the Apache License, carry the
+modification statement in section 2 above, retain the attribution notices in
+section 1, and add a statement of any further changes you made. See
+LICENSE-NOTE.md for a plain-English walkthrough.
+
+================================================================================
+4. Methods and prior work this project builds on
+================================================================================
+
+Credited as prior art that this project uses or learned from. No code or
+weights from these projects are redistributed here.
+
+    navopw/laya-onnx - Apache License 2.0
+        https://github.com/navopw/laya-onnx
+        ONNX Runtime server for Laya, with published Raspberry Pi 5 benchmarks.
+
+    receptron/laya - MIT License
+        https://github.com/receptron/laya
+        Node/TypeScript ONNX runtime for Laya. Its export script showed that the
+        dynamo exporter is the way past the attention-fallback problem.
+
+    nvkudva/laya-web-q8
+        https://huggingface.co/nvkudva/laya-web-q8
+        Source of the block-wise MatMulNBits int8 recipe used by
+        quantize_onnx.py. Licence not verified by this project; only the method
+        is used.
+
+    mizorewww/laya-mlx and mizorewww/laya-coreml
+        Apple Silicon ports of Laya. Licences not verified by this project.
+
+Python dependencies (PyTorch, Transformers, ONNX Runtime, Hugging Face Hub and
+others) are used but not redistributed here; their licences travel with them.
+
+================================================================================
+5. Trademarks
+================================================================================
+
+Apache License 2.0 section 6 grants no trademark rights. "Laya" and "Convai
+Innovations" are used here solely to identify the upstream model. laya-micro is
+an independent project and is not affiliated with, sponsored by, or endorsed by
+Convai Innovations, TypeSafe AI, or any project credited above.

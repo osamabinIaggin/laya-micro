@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+
+# Build outputs: checkpoints and graphs are rebuilt by the pipeline, never committed.
+laya-multilingual-en/
+*.onnx
+*.onnx.data
+*.meta.json
+out/

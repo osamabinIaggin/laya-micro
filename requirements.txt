@@ -1,0 +1,12 @@
+# Shrinking and evaluating: everything here runs on a workstation, not the target device.
+laya>=0.3.3            # the model itself; pulls torch + transformers
+onnx>=1.17
+onnxruntime>=1.20      # also the runtime on the target device
+onnxscript>=0.7        # required by torch.onnx.export(dynamo=True)
+numpy>=2.0
+huggingface_hub>=0.26
+safetensors>=0.4
+tokenizers>=0.20
+
+# Only needed for `bench.py --backend jev` (comparison against the hosted API).
+requests>=2.31

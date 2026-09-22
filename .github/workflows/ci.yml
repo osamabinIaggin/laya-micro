@@ -1,0 +1,32 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      # The suite covers task construction and the runtime's pure functions, so it
+      # needs neither model weights nor onnxruntime.
+      - run: pip install numpy
+      - run: python -m unittest discover -s tests -v
+
+      - name: scripts are syntactically valid
+        run: |
+          python -m compileall -q *.py
+          for f in scripts/*.sh; do bash -n "$f"; done
+
+      - name: case labels agree with the task definition
+        run: python -c "import task; c=task.load_cases(include_ambiguous=True); print(len(c), 'cases load')"

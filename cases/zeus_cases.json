@@ -1,0 +1,1213 @@
+[
+ {
+  "utterance": "come over here",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "come here",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "come closer",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "walk towards me",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "move forward",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "come to me",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "walk forward a little",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "approach me",
+  "action": "forward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "back up a bit",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "go backwards",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "move back",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "step back",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "reverse",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "back away from me",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "get back",
+  "action": "backward",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "turn left",
+  "action": "turn_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "turn to your left",
+  "action": "turn_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "face left",
+  "action": "turn_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "rotate left",
+  "action": "turn_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look to the left side and turn",
+  "action": "turn_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "turn right",
+  "action": "turn_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "turn to your right",
+  "action": "turn_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "face right",
+  "action": "turn_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "rotate right",
+  "action": "turn_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "spin around",
+  "action": "spin",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "do a spin",
+  "action": "spin",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "turn all the way around",
+  "action": "spin",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "twirl",
+  "action": "spin",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "do a 360",
+  "action": "spin",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "creep forward",
+  "action": "creep",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sneak up quietly",
+  "action": "creep",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "move quietly",
+  "action": "creep",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tiptoe",
+  "action": "creep",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "walk softly",
+  "action": "creep",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "walk with some swagger",
+  "action": "swagger",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "strut",
+  "action": "swagger",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "walk cool",
+  "action": "swagger",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "show me your swagger",
+  "action": "swagger",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sit down please",
+  "action": "sit",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sit",
+  "action": "sit",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "take a seat",
+  "action": "sit",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sit down",
+  "action": "sit",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "have a rest",
+  "action": "sit",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "stand up",
+  "action": "stand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "get up",
+  "action": "stand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "stand",
+  "action": "stand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "on your feet",
+  "action": "stand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "rise up",
+  "action": "stand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "crouch down then get up",
+  "action": "crouch_rise",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "duck down and rise",
+  "action": "crouch_rise",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "do a squat",
+  "action": "crouch_rise",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "crouch and rise",
+  "action": "crouch_rise",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "play dead",
+  "action": "play_dead",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "pretend you are dead",
+  "action": "play_dead",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "act dead",
+  "action": "play_dead",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "drop dead",
+  "action": "play_dead",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "play possum",
+  "action": "play_dead",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "say hello to my friend",
+  "action": "wave_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "wave at him",
+  "action": "wave_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "wave hello",
+  "action": "wave_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "say hi",
+  "action": "wave_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "greet them",
+  "action": "wave_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "wave",
+  "action": "wave_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "shake my hand",
+  "action": "shake_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "give me a handshake",
+  "action": "shake_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "offer your hand",
+  "action": "shake_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "let's shake on it",
+  "action": "shake_hand",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "do you agree with me",
+  "action": "nod",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "nod your head",
+  "action": "nod",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "say yes",
+  "action": "nod",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "give me a yes",
+  "action": "nod",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "nod",
+  "action": "nod",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "say no",
+  "action": "shake_head",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "shake your head",
+  "action": "shake_head",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tell me no",
+  "action": "shake_head",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "disagree with that",
+  "action": "shake_head",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "show me you are excited",
+  "action": "excited",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "get excited",
+  "action": "excited",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "act excited",
+  "action": "excited",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "show some excitement",
+  "action": "excited",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "show me your fighting stance",
+  "action": "fighting",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "get ready to fight",
+  "action": "fighting",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "put your fists up",
+  "action": "fighting",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "fight me",
+  "action": "fighting",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look to the left",
+  "action": "look_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look left",
+  "action": "look_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "turn your head left",
+  "action": "look_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "check your left side",
+  "action": "look_left",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look to the right",
+  "action": "look_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look right",
+  "action": "look_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "turn your head right",
+  "action": "look_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "check your right side",
+  "action": "look_right",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look up at the ceiling",
+  "action": "look_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look up",
+  "action": "look_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "raise your head",
+  "action": "look_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look upwards",
+  "action": "look_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look down at the floor",
+  "action": "look_down",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look down",
+  "action": "look_down",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "lower your head",
+  "action": "look_down",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look at the ground",
+  "action": "look_down",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "warm up",
+  "action": "warm_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "stretch a bit",
+  "action": "warm_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "do some stretches",
+  "action": "warm_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "loosen up",
+  "action": "warm_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "give me some push ups",
+  "action": "push_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "do push ups",
+  "action": "push_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "do ten push ups",
+  "action": "push_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "drop and give me twenty",
+  "action": "push_up",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "play some music",
+  "action": "play_music",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "put on a song",
+  "action": "play_music",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "play a tune",
+  "action": "play_music",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "play me something",
+  "action": "play_music",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "show me your best dance moves",
+  "action": "dance",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "dance for me",
+  "action": "dance",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "dance",
+  "action": "dance",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "let's see you dance",
+  "action": "dance",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "bust a move",
+  "action": "dance",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sway side to side",
+  "action": "sway",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sway",
+  "action": "sway",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "rock side to side",
+  "action": "sway",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "bob up and down",
+  "action": "bob",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "bob",
+  "action": "bob",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "bounce up and down",
+  "action": "bob",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what do you see right now",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what do you see",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what is in front of you",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what am I holding",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what objects are around you",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "can you see anything",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what's on the table",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tell me what you can see",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "is there anyone else here",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what am I showing you",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what is this thing I'm holding",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "look and tell me what's there",
+  "action": "none",
+  "vision": "objects",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "describe this room to me in detail",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "describe what you are looking at",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "give me a full description of the scene",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tell me everything you see in detail",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "describe the room",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what does the room look like",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "paint me a picture of what's in front of you",
+  "action": "none",
+  "vision": "describe",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "how much memory have you got left",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "are you feeling alright",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "how are you doing",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what can you do",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what is your name",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "are you getting hot",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "how is your battery",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "are you okay",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what are your abilities",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "how long have you been running",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "are you tired",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tell me about yourself",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what model are you running",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "is your camera working",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "can you hear me okay",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what's your status",
+  "action": "none",
+  "vision": "none",
+  "about_self": 1,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what is the capital of Ghana",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tell me a joke",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what time is it",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "who won the world cup",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what's the weather like",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "how do I cook jollof rice",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what is two plus two",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "tell me something interesting",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "what day is it today",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "explain gravity to me",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "sing me a song",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "what's your favourite colour",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": true
+ },
+ {
+  "utterance": "how far is the moon",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "who is the president",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ },
+ {
+  "utterance": "say something funny",
+  "action": "none",
+  "vision": "none",
+  "about_self": 0,
+  "ambiguous": false
+ }
+]

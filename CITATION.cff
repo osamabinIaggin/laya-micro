@@ -1,0 +1,58 @@
+cff-version: 1.2.0
+message: "If you use laya-micro, please cite it as below."
+title: laya-micro
+abstract: >-
+  A toolkit for shrinking Convai Innovations' Laya typed-decision model so it
+  runs on single-board computers. It combines a BPE-merge-closed vocabulary
+  prune with block-wise int8 ONNX quantization, and evaluates the result on
+  human-labelled robot commands, reporting majority-class baselines and
+  per-class precision and recall alongside accuracy.
+type: software
+license: MIT
+authors:
+  - family-names: Glago
+    given-names: Gideon
+    alias: osamabinIaggin
+    country: GH
+# TODO: confirm this URL once laya-micro is pushed.
+repository-code: "https://github.com/osamabinIaggin/laya-micro"
+# TODO: add `version:` and `date-released: YYYY-MM-DD` at the first tagged release.
+keywords:
+  - laya
+  - typed decisions
+  - model compression
+  - vocabulary pruning
+  - quantization
+  - onnx
+  - raspberry-pi
+  - edge-inference
+  - robotics
+references:
+  - type: software
+    title: Laya
+    authors:
+      - name: "Convai Innovations"
+    license: Apache-2.0
+    repository-code: "https://github.com/NandhaKishorM/laya"
+    url: "https://huggingface.co/convaiinnovations/laya"
+    notes: "The decision model laya-micro compresses."
+  - type: software
+    title: laya-onnx
+    authors:
+      - name: "navopw"
+    license: Apache-2.0
+    repository-code: "https://github.com/navopw/laya-onnx"
+    notes: "ONNX Runtime server for Laya, with published Raspberry Pi 5 benchmarks."
+  - type: software
+    title: laya
+    authors:
+      - name: "receptron"
+    license: MIT
+    repository-code: "https://github.com/receptron/laya"
+    notes: "Node/TypeScript ONNX runtime; showed that the dynamo exporter avoids the attention-fallback export failure."
+  - type: software
+    title: laya-web-q8
+    authors:
+      - name: "nvkudva"
+    url: "https://huggingface.co/nvkudva/laya-web-q8"
+    notes: "Source of the block-wise MatMulNBits int8 recipe used here."

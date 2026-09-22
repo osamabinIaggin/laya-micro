@@ -1,0 +1,76 @@
+{
+  "name": "zeus-picrawler",
+  "description": "Spoken commands to a SunFounder PiCrawler quadruped robot",
+  "base_state": {
+    "robot": "Zeus, a four-legged PiCrawler robot with a camera, mic and speaker",
+    "sees": [
+      "person"
+    ],
+    "posture": "standing"
+  },
+  "action_groups": {
+    "posture": {
+      "sit": "sit down",
+      "stand": "stand up",
+      "crouch_rise": "crouch then rise",
+      "play_dead": "play dead"
+    },
+    "gesture": {
+      "wave_hand": "wave hello",
+      "shake_hand": "offer a handshake",
+      "nod": "nod yes",
+      "shake_head": "shake head no",
+      "excited": "act excited",
+      "fighting": "take a fighting stance"
+    },
+    "look": {
+      "look_left": "look to the left",
+      "look_right": "look to the right",
+      "look_up": "look up",
+      "look_down": "look down"
+    },
+    "move": {
+      "forward": "walk forward",
+      "backward": "walk backward",
+      "turn_left": "turn left",
+      "turn_right": "turn right",
+      "swagger": "walk with swagger",
+      "creep": "creep quietly",
+      "spin": "spin around"
+    },
+    "exercise": {
+      "warm_up": "stretch and warm up",
+      "push_up": "do push-ups"
+    },
+    "fun": {
+      "play_music": "play a song",
+      "dance": "dance to music",
+      "sway": "sway side to side",
+      "bob": "bob up and down"
+    }
+  },
+  "categories": {
+    "posture": "sitting, standing, lying down",
+    "gesture": "expressive movements of the body or head",
+    "look": "aiming the head or camera in a direction",
+    "move": "travelling across the floor",
+    "exercise": "stretching or working out",
+    "fun": "music, dancing, playing around",
+    "none": "no physical action is called for"
+  },
+  "side_questions": {
+    "vision": {
+      "type": "choice",
+      "instructions": "Does answering require looking through the camera?",
+      "criteria": {
+        "objects": "needs a quick list of what is visible",
+        "describe": "needs a detailed description of the scene",
+        "none": "can be answered without vision"
+      }
+    },
+    "about_self": {
+      "type": "noul",
+      "instructions": "The user is asking about the robot itself — its state, abilities or condition."
+    }
+  }
+}
