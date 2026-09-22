@@ -28,6 +28,17 @@ from runtime import LayaRuntime  # noqa: E402
 from task import Task, load_cases, majority_baseline  # noqa: E402
 
 
+def find_graph(directory):
+    """The bundle keeps whatever name the graph was built with."""
+    import glob
+
+    found = [f for f in sorted(glob.glob(os.path.join(directory, "*.onnx")))
+             if not f.endswith(".data")]
+    if not found:
+        raise SystemExit(f"no .onnx in {directory} — build one with scripts/make_bundle.sh")
+    return found[0]
+
+
 def peak_rss_mb():
     rss = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     return round(rss / (1024 * 1024) if sys.platform == "darwin" else rss / 1024)
@@ -83,7 +94,7 @@ def decode_throttled(value):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--model", default=os.path.join(HERE, "model"))
-    ap.add_argument("--onnx", default=os.path.join(HERE, "laya.int8.onnx"))
+    ap.add_argument("--onnx", default=None, help="ONNX graph (default: the one in this directory)")
     ap.add_argument("--cases", default=None, help="labelled cases JSON")
     ap.add_argument("--task", default=None, help="domain definition JSON")
     ap.add_argument("--threads", type=int, default=4)
@@ -91,6 +102,7 @@ def main():
     ap.add_argument("--include-ambiguous", action="store_true")
     args = ap.parse_args()
 
+    args.onnx = args.onnx or find_graph(HERE)
     before = telemetry()
     print(f"before: {before}", flush=True)
     if (before.get("throttled") or "").strip() not in ("0x0", ""):

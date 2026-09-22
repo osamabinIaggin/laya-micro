@@ -25,8 +25,10 @@ mkdir -p "$OUT/model/tokenizer" "$OUT/model/encoder" "$OUT/cases"
 cp "$CKPT/tokenizer/tokenizer.json" "$CKPT/tokenizer/tokenizer_config.json" "$OUT/model/tokenizer/"
 cp "$CKPT/encoder/config.json" "$OUT/model/encoder/"
 cp "$CKPT/rl_agent_config.json" "$OUT/model/"
-cp "$ONNX" "$OUT/laya.int8.onnx"
-[ -f "$ONNX.data" ] && cp "$ONNX.data" "$OUT/laya.int8.onnx.data"
+# Keep the graph's filename: an ONNX with external weights refers to the .data file
+# by name, so renaming one without rewriting the other makes the model unloadable.
+cp "$ONNX" "$OUT/$(basename "$ONNX")"
+[ -f "$ONNX.data" ] && cp "$ONNX.data" "$OUT/$(basename "$ONNX").data"
 cp "$ROOT/runtime.py" "$ROOT/task.py" "$ROOT/bench_runtime.py" "$OUT/"
 cp "$ROOT/cases/zeus_cases.json" "$ROOT/cases/zeus_task.json" "$OUT/cases/"
 cp "$ROOT/requirements-runtime.txt" "$OUT/"
